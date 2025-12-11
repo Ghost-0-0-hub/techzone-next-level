@@ -1,0 +1,625 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TechZone Learning | Best IT Institute in Karachi</title>
+    <meta name="description" content="TechZone Learning - The best IT institute in Karachi offering courses in Web Development, Digital Marketing, AI, and more.">
+    <meta name="keywords" content="IT courses Karachi, web development course, digital marketing training, AI course, MERN stack, PHP development">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Sora:wght@300;400;500;600;700;800&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Lucide Icons -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+    
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+    <!-- Navigation -->
+    <header class="navbar" id="navbar">
+        <div class="container navbar-container">
+            <a href="#" class="logo">
+                <span class="logo-icon">
+                    <i data-lucide="graduation-cap"></i>
+                </span>
+                <div class="logo-text">
+                    <span class="logo-name">TechZone</span>
+                    <span class="logo-tagline">Learning</span>
+                </div>
+            </a>
+            
+            <nav class="nav-links" id="navLinks">
+                <a href="#home" class="nav-link">Home</a>
+                <a href="#about" class="nav-link">About</a>
+                <a href="#courses" class="nav-link">Courses</a>
+                <a href="#reviews" class="nav-link">Reviews</a>
+                <a href="#contact" class="nav-link">Contact</a>
+            </nav>
+            
+            <a href="#contact" class="btn btn-primary nav-cta">
+                Enroll Now
+                <i data-lucide="arrow-right"></i>
+            </a>
+            
+            <button class="mobile-menu-btn" id="mobileMenuBtn">
+                <i data-lucide="menu" id="menuIcon"></i>
+            </button>
+        </div>
+        
+        <!-- Mobile Menu -->
+        <div class="mobile-menu" id="mobileMenu">
+            <a href="#home" class="mobile-nav-link">Home</a>
+            <a href="#about" class="mobile-nav-link">About</a>
+            <a href="#courses" class="mobile-nav-link">Courses</a>
+            <a href="#reviews" class="mobile-nav-link">Reviews</a>
+            <a href="#contact" class="mobile-nav-link">Contact</a>
+            <a href="#contact" class="btn btn-primary mobile-cta">Enroll Now</a>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="hero-bg"></div>
+        <div class="hero-overlay"></div>
+        <div class="container hero-content">
+            <div class="hero-badge">
+                <i data-lucide="sparkles"></i>
+                <span>#1 IT Training Institute in Karachi</span>
+            </div>
+            
+            <h1 class="hero-title">
+                Transform Your Future with
+                <span class="text-gradient">Expert IT Training</span>
+            </h1>
+            
+            <p class="hero-description">
+                Master in-demand tech skills with industry experts. From Web Development to AI, 
+                we provide hands-on training that prepares you for real-world success.
+            </p>
+            
+            <div class="hero-buttons">
+                <a href="#courses" class="btn btn-hero">
+                    <i data-lucide="rocket"></i>
+                    Explore Courses
+                </a>
+                <a href="#contact" class="btn btn-hero-outline">
+                    <i data-lucide="phone"></i>
+                    Get Free Consultation
+                </a>
+            </div>
+            
+            <div class="hero-stats">
+                <div class="stat-item">
+                    <span class="stat-number">5000+</span>
+                    <span class="stat-label">Students Trained</span>
+                </div>
+                <div class="stat-divider"></div>
+                <div class="stat-item">
+                    <span class="stat-number">15+</span>
+                    <span class="stat-label">Expert Courses</span>
+                </div>
+                <div class="stat-divider"></div>
+                <div class="stat-item">
+                    <span class="stat-number">95%</span>
+                    <span class="stat-label">Placement Rate</span>
+                </div>
+            </div>
+        </div>
+        
+        <div class="scroll-indicator">
+            <i data-lucide="chevrons-down"></i>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="about" id="about">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-badge">
+                    <i data-lucide="info"></i>
+                    About Us
+                </span>
+                <h2 class="section-title">
+                    Why Choose <span class="text-gradient">TechZone Learning?</span>
+                </h2>
+                <p class="section-description">
+                    We're committed to transforming careers through quality IT education
+                </p>
+            </div>
+            
+            <div class="about-grid">
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i data-lucide="users"></i>
+                    </div>
+                    <h3>Expert Instructors</h3>
+                    <p>Learn from industry professionals with years of real-world experience in top tech companies.</p>
+                </div>
+                
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i data-lucide="laptop"></i>
+                    </div>
+                    <h3>Hands-On Training</h3>
+                    <p>Practice with real projects and build a portfolio that showcases your skills to employers.</p>
+                </div>
+                
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i data-lucide="briefcase"></i>
+                    </div>
+                    <h3>Job Placement</h3>
+                    <p>95% of our graduates land jobs within 3 months with our dedicated career support team.</p>
+                </div>
+                
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i data-lucide="clock"></i>
+                    </div>
+                    <h3>Flexible Schedule</h3>
+                    <p>Choose from morning, evening, or weekend batches to fit your busy lifestyle.</p>
+                </div>
+                
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i data-lucide="award"></i>
+                    </div>
+                    <h3>Certified Programs</h3>
+                    <p>Earn recognized certifications that validate your skills and boost your resume.</p>
+                </div>
+                
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i data-lucide="heart-handshake"></i>
+                    </div>
+                    <h3>Lifetime Support</h3>
+                    <p>Get ongoing mentorship and access to our alumni network even after graduation.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Courses Section -->
+    <section class="courses" id="courses">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-badge">
+                    <i data-lucide="book-open"></i>
+                    Our Courses
+                </span>
+                <h2 class="section-title">
+                    Industry-Leading <span class="text-gradient">IT Programs</span>
+                </h2>
+                <p class="section-description">
+                    Choose from our comprehensive range of courses designed for the modern tech industry
+                </p>
+            </div>
+            
+            <div class="courses-grid">
+                <!-- Course Card 1 -->
+                <div class="course-card">
+                    <div class="course-image">
+                        <img src="{{ url_for('static', filename='images/course-web.jpg') }}" alt="Web Development">
+                        <span class="course-badge popular">Most Popular</span>
+                    </div>
+                    <div class="course-content">
+                        <h3>Full Stack Web Development</h3>
+                        <p>Master MERN Stack - MongoDB, Express, React, Node.js with real projects.</p>
+                        <div class="course-meta">
+                            <span><i data-lucide="clock"></i> 6 Months</span>
+                            <span><i data-lucide="users"></i> 1200+ Students</span>
+                        </div>
+                        <div class="course-footer">
+                            <div class="course-rating">
+                                <i data-lucide="star" class="star-filled"></i>
+                                <span>4.9</span>
+                            </div>
+                            <a href="#contact" class="btn btn-secondary">Enroll Now</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Course Card 2 -->
+                <div class="course-card">
+                    <div class="course-image">
+                        <img src="{{ url_for('static', filename='images/course-marketing.jpg') }}" alt="Digital Marketing">
+                        <span class="course-badge trending">Trending</span>
+                    </div>
+                    <div class="course-content">
+                        <h3>Digital Marketing Mastery</h3>
+                        <p>SEO, Social Media, Google Ads, Content Marketing & Analytics.</p>
+                        <div class="course-meta">
+                            <span><i data-lucide="clock"></i> 4 Months</span>
+                            <span><i data-lucide="users"></i> 800+ Students</span>
+                        </div>
+                        <div class="course-footer">
+                            <div class="course-rating">
+                                <i data-lucide="star" class="star-filled"></i>
+                                <span>4.8</span>
+                            </div>
+                            <a href="#contact" class="btn btn-secondary">Enroll Now</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Course Card 3 -->
+                <div class="course-card">
+                    <div class="course-image">
+                        <img src="{{ url_for('static', filename='images/course-ai.jpg') }}" alt="AI & Machine Learning">
+                        <span class="course-badge new">New</span>
+                    </div>
+                    <div class="course-content">
+                        <h3>AI & Machine Learning</h3>
+                        <p>Python, TensorFlow, Deep Learning, Neural Networks & ChatGPT API.</p>
+                        <div class="course-meta">
+                            <span><i data-lucide="clock"></i> 5 Months</span>
+                            <span><i data-lucide="users"></i> 400+ Students</span>
+                        </div>
+                        <div class="course-footer">
+                            <div class="course-rating">
+                                <i data-lucide="star" class="star-filled"></i>
+                                <span>4.9</span>
+                            </div>
+                            <a href="#contact" class="btn btn-secondary">Enroll Now</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Course Card 4 -->
+                <div class="course-card">
+                    <div class="course-image">
+                        <img src="{{ url_for('static', filename='images/course-graphic.jpg') }}" alt="Graphic Design">
+                    </div>
+                    <div class="course-content">
+                        <h3>Graphic Design Pro</h3>
+                        <p>Adobe Photoshop, Illustrator, Figma, UI/UX Design Principles.</p>
+                        <div class="course-meta">
+                            <span><i data-lucide="clock"></i> 3 Months</span>
+                            <span><i data-lucide="users"></i> 600+ Students</span>
+                        </div>
+                        <div class="course-footer">
+                            <div class="course-rating">
+                                <i data-lucide="star" class="star-filled"></i>
+                                <span>4.7</span>
+                            </div>
+                            <a href="#contact" class="btn btn-secondary">Enroll Now</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Course Card 5 -->
+                <div class="course-card">
+                    <div class="course-image">
+                        <img src="{{ url_for('static', filename='images/course-php.jpg') }}" alt="PHP Development">
+                    </div>
+                    <div class="course-content">
+                        <h3>PHP & Laravel Development</h3>
+                        <p>Build robust web applications with PHP, Laravel, MySQL & REST APIs.</p>
+                        <div class="course-meta">
+                            <span><i data-lucide="clock"></i> 4 Months</span>
+                            <span><i data-lucide="users"></i> 500+ Students</span>
+                        </div>
+                        <div class="course-footer">
+                            <div class="course-rating">
+                                <i data-lucide="star" class="star-filled"></i>
+                                <span>4.8</span>
+                            </div>
+                            <a href="#contact" class="btn btn-secondary">Enroll Now</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Course Card 6 -->
+                <div class="course-card">
+                    <div class="course-image">
+                        <img src="{{ url_for('static', filename='images/course-mobile.jpg') }}" alt="Mobile App Development">
+                    </div>
+                    <div class="course-content">
+                        <h3>Mobile App Development</h3>
+                        <p>React Native, Flutter - Build cross-platform iOS & Android apps.</p>
+                        <div class="course-meta">
+                            <span><i data-lucide="clock"></i> 5 Months</span>
+                            <span><i data-lucide="users"></i> 350+ Students</span>
+                        </div>
+                        <div class="course-footer">
+                            <div class="course-rating">
+                                <i data-lucide="star" class="star-filled"></i>
+                                <span>4.8</span>
+                            </div>
+                            <a href="#contact" class="btn btn-secondary">Enroll Now</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Reviews Section -->
+    <section class="reviews" id="reviews">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-badge">
+                    <i data-lucide="message-square-quote"></i>
+                    Testimonials
+                </span>
+                <h2 class="section-title">
+                    What Our <span class="text-gradient">Students Say</span>
+                </h2>
+                <p class="section-description">
+                    Real stories from real students who transformed their careers with us
+                </p>
+            </div>
+            
+            <div class="reviews-grid">
+                <!-- Review Card 1 -->
+                <div class="review-card">
+                    <div class="review-header">
+                        <div class="reviewer-avatar">AK</div>
+                        <div class="reviewer-info">
+                            <h4>Ahmed Khan</h4>
+                            <p>Full Stack Developer at Careem</p>
+                        </div>
+                    </div>
+                    <div class="review-rating">
+                        <i data-lucide="star" class="star-filled"></i>
+                        <i data-lucide="star" class="star-filled"></i>
+                        <i data-lucide="star" class="star-filled"></i>
+                        <i data-lucide="star" class="star-filled"></i>
+                        <i data-lucide="star" class="star-filled"></i>
+                    </div>
+                    <p class="review-text">"TechZone completely transformed my career. The MERN stack course was incredibly comprehensive, and the instructors really care about your success. Landed my dream job within 2 months!"</p>
+                    <span class="review-course">Web Development Course</span>
+                </div>
+                
+                <!-- Review Card 2 -->
+                <div class="review-card">
+                    <div class="review-header">
+                        <div class="reviewer-avatar">SF</div>
+                        <div class="reviewer-info">
+                            <h4>Sara Fatima</h4>
+                            <p>Marketing Manager at Jazz</p>
+                        </div>
+                    </div>
+                    <div class="review-rating">
+                        <i data-lucide="star" class="star-filled"></i>
+                        <i data-lucide="star" class="star-filled"></i>
+                        <i data-lucide="star" class="star-filled"></i>
+                        <i data-lucide="star" class="star-filled"></i>
+                        <i data-lucide="star" class="star-filled"></i>
+                    </div>
+                    <p class="review-text">"The Digital Marketing course gave me practical skills I use every day. The hands-on approach with real campaigns was exactly what I needed. Best investment in myself!"</p>
+                    <span class="review-course">Digital Marketing Course</span>
+                </div>
+                
+                <!-- Review Card 3 -->
+                <div class="review-card">
+                    <div class="review-header">
+                        <div class="reviewer-avatar">MH</div>
+                        <div class="reviewer-info">
+                            <h4>Muhammad Hassan</h4>
+                            <p>AI Engineer at Systems Limited</p>
+                        </div>
+                    </div>
+                    <div class="review-rating">
+                        <i data-lucide="star" class="star-filled"></i>
+                        <i data-lucide="star" class="star-filled"></i>
+                        <i data-lucide="star" class="star-filled"></i>
+                        <i data-lucide="star" class="star-filled"></i>
+                        <i data-lucide="star" class="star-filled"></i>
+                    </div>
+                    <p class="review-text">"Coming from a non-tech background, I was nervous about AI. But the instructors made complex concepts simple. Now I'm building AI solutions at a top company!"</p>
+                    <span class="review-course">AI & Machine Learning Course</span>
+                </div>
+            </div>
+            
+            <div class="reviews-stats">
+                <div class="reviews-stat-item">
+                    <i data-lucide="users"></i>
+                    <span class="stat-number">5000+</span>
+                    <span class="stat-label">Happy Students</span>
+                </div>
+                <div class="reviews-stat-item">
+                    <i data-lucide="star"></i>
+                    <span class="stat-number">4.9/5</span>
+                    <span class="stat-label">Average Rating</span>
+                </div>
+                <div class="reviews-stat-item">
+                    <i data-lucide="thumbs-up"></i>
+                    <span class="stat-number">98%</span>
+                    <span class="stat-label">Recommend Us</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact" id="contact">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-badge">
+                    <i data-lucide="mail"></i>
+                    Get In Touch
+                </span>
+                <h2 class="section-title">
+                    Start Your <span class="text-gradient">Journey Today</span>
+                </h2>
+                <p class="section-description">
+                    Ready to transform your career? Contact us for a free consultation
+                </p>
+            </div>
+            
+            <div class="contact-container">
+                <div class="contact-form-wrapper">
+                    <form id="contactForm" class="contact-form">
+                        <div class="form-group">
+                            <label for="name">Full Name</label>
+                            <input type="text" id="name" name="name" placeholder="Enter your name" required>
+                        </div>
+                        
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="email">Email Address</label>
+                                <input type="email" id="email" name="email" placeholder="your@email.com" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="phone">Phone Number</label>
+                                <input type="tel" id="phone" name="phone" placeholder="+92 300 1234567" required>
+                            </div>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="course">Select Course</label>
+                            <select id="course" name="course" required>
+                                <option value="">Choose a course...</option>
+                                <option value="web-development">Full Stack Web Development</option>
+                                <option value="digital-marketing">Digital Marketing Mastery</option>
+                                <option value="ai-ml">AI & Machine Learning</option>
+                                <option value="graphic-design">Graphic Design Pro</option>
+                                <option value="php-laravel">PHP & Laravel Development</option>
+                                <option value="mobile-app">Mobile App Development</option>
+                            </select>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="message">Message (Optional)</label>
+                            <textarea id="message" name="message" placeholder="Tell us about your goals..." rows="4"></textarea>
+                        </div>
+                        
+                        <button type="submit" class="btn btn-primary btn-full">
+                            <i data-lucide="send"></i>
+                            Send Inquiry
+                        </button>
+                    </form>
+                </div>
+                
+                <div class="contact-info">
+                    <div class="info-card">
+                        <div class="info-icon">
+                            <i data-lucide="map-pin"></i>
+                        </div>
+                        <div class="info-content">
+                            <h4>Visit Us</h4>
+                            <p>Office 401, 4th Floor, Al-Hafeez Tower,<br>Main Boulevard, Gulberg III, Lahore</p>
+                        </div>
+                    </div>
+                    
+                    <div class="info-card">
+                        <div class="info-icon">
+                            <i data-lucide="phone"></i>
+                        </div>
+                        <div class="info-content">
+                            <h4>Call Us</h4>
+                            <p>+92 321 1234567<br>+92 42 35761234</p>
+                        </div>
+                    </div>
+                    
+                    <div class="info-card">
+                        <div class="info-icon">
+                            <i data-lucide="mail"></i>
+                        </div>
+                        <div class="info-content">
+                            <h4>Email Us</h4>
+                            <p>info@techzonelearning.com<br>admissions@techzonelearning.com</p>
+                        </div>
+                    </div>
+                    
+                    <div class="info-card">
+                        <div class="info-icon">
+                            <i data-lucide="clock"></i>
+                        </div>
+                        <div class="info-content">
+                            <h4>Office Hours</h4>
+                            <p>Mon - Sat: 9:00 AM - 9:00 PM<br>Sunday: Closed</p>
+                        </div>
+                    </div>
+                    
+                    <a href="https://wa.me/923211234567" class="whatsapp-btn" target="_blank">
+                        <i data-lucide="message-circle"></i>
+                        Chat on WhatsApp
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <a href="#" class="logo">
+                        <span class="logo-icon">
+                            <i data-lucide="graduation-cap"></i>
+                        </span>
+                        <div class="logo-text">
+                            <span class="logo-name">TechZone</span>
+                            <span class="logo-tagline">Learning</span>
+                        </div>
+                    </a>
+                    <p>Empowering careers through quality IT education since 2018. Join thousands of successful graduates.</p>
+                    <div class="social-links">
+                        <a href="#" aria-label="Facebook"><i data-lucide="facebook"></i></a>
+                        <a href="#" aria-label="Instagram"><i data-lucide="instagram"></i></a>
+                        <a href="#" aria-label="LinkedIn"><i data-lucide="linkedin"></i></a>
+                        <a href="#" aria-label="YouTube"><i data-lucide="youtube"></i></a>
+                    </div>
+                </div>
+                
+                <div class="footer-links">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#about">About Us</a></li>
+                        <li><a href="#courses">Courses</a></li>
+                        <li><a href="#reviews">Reviews</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-links">
+                    <h4>Popular Courses</h4>
+                    <ul>
+                        <li><a href="#courses">Web Development</a></li>
+                        <li><a href="#courses">Digital Marketing</a></li>
+                        <li><a href="#courses">AI & Machine Learning</a></li>
+                        <li><a href="#courses">Graphic Design</a></li>
+                        <li><a href="#courses">Mobile App Dev</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-contact">
+                    <h4>Contact Info</h4>
+                    <div class="contact-item">
+                        <i data-lucide="map-pin"></i>
+                        <span>Gulberg III, Lahore</span>
+                    </div>
+                    <div class="contact-item">
+                        <i data-lucide="phone"></i>
+                        <span>+92 321 1234567</span>
+                    </div>
+                    <div class="contact-item">
+                        <i data-lucide="mail"></i>
+                        <span>info@techzonelearning.com</span>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2024 TechZone Learning. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+    
+    <!-- Scroll to Top Button -->
+    <button class="scroll-top" id="scrollTop" aria-label="Scroll to top">
+        <i data-lucide="arrow-up"></i>
+    </button>
+
+    <!-- JavaScript -->
+    <script src="{{ url_for('static', filename='js/main.js') }}"></script>
+</body>
+</html>
